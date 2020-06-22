@@ -1,0 +1,110 @@
+<%- include ('../partials/before-header.ejs') %>
+<%- include ('../partials/header-liste.ejs') %>
+<%- include ('../partials/navigation.ejs') %>
+
+<div class="wrapper-kategori">
+    <section class="sortby__menu">
+        <h1 class="sortby__overskrift">AMPLIFIERS</h1>
+        <div class="sortby__box">
+            <form class="sortby__venstre">
+                <p>
+                    <label class="sortby__label-venstre">SORT BY:</label>
+                    <select class="myList" id="sort">
+                        <!---<option value=""></option>--->
+                        <option value="price">Price</option>
+                        <option value="newest">Newest</option>
+                        <option value="brand">Brand</option>
+                    </select>
+                    <i class="sortby__arrow fa fa-arrow-up" aria-hidden="true"></i>
+                </p>
+            </form>
+            <div class="sortby__icons">
+                <p>VIEW AS:
+                    <i class="sortby__icons-1 fa fa-th-large" aria-hidden="true"></i>
+                    <i class="sortby__icons-2 fa fa-bars" aria-hidden="true"></i>
+                </p>
+            </div>
+            <form class="sortby__hoejre">
+                <p>
+                    <label class="sortby__label-hoejre">133 Item(s) SHOW:</label>
+                    <select class="myList">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <div class="breadcrumbs">
+        <a href="/kategori-liste" class="breadcrumbs__home">Home</a>
+        <p class="breadcrumbs__seperator">/</p>
+    </div>
+
+    <!-- skal laves så den henter informationer fra det nye API -->
+    <aside class="shop-aside-left-top">
+        <p class="shop-aside-left-top__shop-link"> <a href="?category=Amplifiers" id="amp">Amplifiers</a> </p>
+        <p class="shop-aside-left-top__shop-link"> <a href="?category=Speakers" id="speak"> Speakers</a></p>
+        <p class="shop-aside-left-top__shop-link"> <a href="?category=Turntables" id="turn">Turntables</a></p>
+        <p class="shop-aside-left-top__shop-link"> <a href="?category=CD Players" id="cd">CD Players</a></p>
+        <p class="shop-aside-left-top__shop-link">Streamers</p>
+        <p class="shop-aside-left-top__shop-link">Cables</p>
+        <p class="shop-aside-left-top__shop-link">Furniture</p>
+        <p class="shop-aside-left-top__shop-link">Headphones</p>
+        <p class="shop-aside-left-top__shop-link">Home Cinema</p>
+        <p class="shop-aside-left-top__shop-link">Ceilling Speakers</p>
+        <p class="shop-aside-left-top__shop-link">TV</p>
+        <p class="shop-aside-left-top__shop-link">Vinyl</p>
+        <p class="shop-aside-left-top__shop-link"> Outlet-Save</p>
+    </aside>
+
+
+    <!-- skal laves så den henter informationer fra det nye API -->
+    <aside class="shop-aside-left-bottom">
+        <p class="shop-aside-left-bottom__header">SHOP BY</p>
+        <p class="shop-aside-left-bottom__filter">Filter</p>
+        <p class="shop-aside-left-bottom__filter">PRICE</p>
+
+        <p class="shop-aside-left-bottom__price-range" id="price-1">500 - 2000 kr</p>
+        <a class="shop-aside-left-bottom__price-range" id="price-2">2000 - 4500 kr</a>
+
+        <p class="shop-aside-left-bottom__filter">MANUFACTURER</p>
+
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Creek" id="creek">Creek</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Boesendorfer" id="boesendorfer">Boesendorfer</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Epos" id="epos">Epos</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Exposure" id="exposure">Exposure</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Harbeth" id="harbeth">Harbeth</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Jolida" id="jolida">Jolida</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Manley" id="manley">Manley</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=PArasound" id="parasound">Parasound</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Pro-Ject" id="proJect">Pro-Ject</a></p>
+    </aside>
+
+    <!-- skal laves så den henter informationer fra det nye API og sortere/tilføjer manufactores fra det -->
+    <aside class="shop-aside-right">
+        <p class="shop-aside-right__manufacturer"> MANUFACTURER
+        </p>
+        <p class="shop-aside-right__brands">Creek</p>
+        <p class="shop-aside-right__brands">Boesendorfer</p>
+        <p class="shop-aside-right__brands">Epos</p>
+        <p class="shop-aside-right__brands">Exposure</p>
+        <p class="shop-aside-right__brands">Harbeth</p>
+        <p class="shop-aside-right__brands">Jolida</p>
+        <p class="shop-aside-right__brands">Manley</p>
+        <p class="shop-aside-right__brands">Parasound</p>
+        <p class="shop-aside-right__brands">Pro-Ject</p>
+        <p class="shop-aside-right__viewAll"><a class="shop-aside-right__viewAll" href="/kategori-liste">View All</a> </p>
+    </aside>
+
+    <main class="thumbnail-grid">
+        <!-- Indhold her til thumbnails produkter , fra javascript -->
+    </main>
+</div>
+
+<%- include ('../partials/footer.ejs') %>
+<script src="/assets/js/products-filter.js"></script>
+<script src="/assets/js/search.js"></script>
+<script src="/assets/js/thumbnails.js"></script>
+<script src="/assets/js/filter-price.js"></script>
+<%- include ('../partials/after-footer.ejs') %>

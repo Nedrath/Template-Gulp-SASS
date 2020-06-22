@@ -1,0 +1,192 @@
+<%- include ('../partials/before-header.ejs') %>
+<%- include ('../partials/header-produkt.ejs') %>
+<%- include ('../partials/navigation.ejs') %>
+
+    <main class="wrapper-shop-produkt">
+
+        <div class="breadcrumbs breadcrumbs_less-margin">
+            <a href="/kategori-liste" class="breadcrumbs__home">Home</a>
+            <p class="breadcrumbs__seperator">/</p>
+        </div>
+
+        <div class="hero-reklame"><img class="hero-reklame__billede" src="/assets/img/banner reklame hifi.png" alt=""></div>
+
+        <!-- shop-produkt er mit grid -->
+        <article class="wrapper-shop-produkt__shop-produkt">
+
+            <section class="produkt-billede">
+            </section>
+
+            <section class="produkt-thumbnail">
+                <h2 class="produkt-thumbnail__views">more views
+                </h2>
+            </section>
+
+            <section class="produkt-specifikation">
+                <h2 class="produkt-specifikation__overskrift">
+                    description
+                </h2>
+                <table>
+                    <tr>
+                        <td>Power-Output:
+                        <td class="produkt-specifikation__td produkt-specifikation__power"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frequency-Response:
+                        <td class="produkt-specifikation__td produkt-specifikation__frequency"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total-Harmonic-Distortion:
+                        <td class="produkt-specifikation__td produkt-specifikation__total"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Damping-Factor:
+                        <td class="produkt-specifikation__td produkt-specifikation__damping"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity:MM:
+                        <td class="produkt-specifikation__td produkt-specifikation__inputMM"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity:MC:
+                        <td class="produkt-specifikation__td produkt-specifikation__inputMC"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: MM / MC:
+                        <td class="produkt-specifikation__td produkt-specifikation__signal"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: High level:
+                        <td class="produkt-specifikation__td produkt-specifikation__input1"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: Balanced High Level:
+                        <td class="produkt-specifikation__td produkt-specifikation__inputBalanced"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: High level:
+                        <td class="produkt-specifikation__td produkt-specifikation__signalHigh"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: Power Amp Direct IN:
+                        <td class="produkt-specifikation__td produkt-specifikation__inputPower"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: Power Amp Direct IN:
+                        <td class="produkt-specifikation__td produkt-specifikation__signalPower"></td>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="produkt-info">
+                <h2 class="produkt-info__overskrift"></h2>
+
+                <div class="otherProducts">
+                    <p class="otherProducts__navn">See other
+                        <span class="otherProducts__brand"></span>products</p>
+                    <p><span class="otherProducts__price"></span><span class="otherProducts__discount"></span>
+                    </p>
+                </div>
+
+                <p class="produkt-info__produktTekst">The PM6006 is an upgraded succesor of the multi-award-winning PM6005.
+                    Marantz retained the pre-amp and power-amp sections that exclusively feature discrete components -
+                    not a single IC in sight of the signal path. The PM6006 is upgraded for peak current at the
+                    amplifier stage, which makes it possible to refine the sound for you in much more detail.</p>
+
+                <div class="buttons-box">
+                    <p class="buttons-box__buttons">ask a question</p>
+                    <p class="buttons-box__buttons">part exchange</p>
+                    <p class="buttons-box__buttons">pay by finance</p>
+                    <p class="buttons-box__buttons">seen a better price?</p>
+                </div>
+            </section>
+
+            <section class="farver">
+                <div class="tekstBox">
+                    <p class="tekstBox__venstre">
+                        Finish <span class="tekstBox__venstre_rød">*</span>
+                    </p>
+                    <p class="tekstBox__højre">
+                        * Required Fields
+                    </p>
+                </div>
+                <div class="valg-knapper">
+                    <input class="valg-knapper__Knap" type="radio" name="farveValg" id="" value="">
+                    <label class="valg-knapper__Knap" for="farveValg">Black</label>
+                </div>
+                <br>
+                <div class="valg-knapper">
+                    <input class="valg-knapper__Knap" type="radio" name="farveValg" id="" value="">
+                    <label class="valg-knapper__Knap" for="farveValg">Silver</label>
+                </div>
+            </section>
+
+            <section class="betaling">
+                <div class="money-box">
+                    <label class="money-box__qty" for="">Qty:</label>
+                    <input class="money-box__antal" type="tel">
+                    <p class="money-box__button">add to cart</p>
+                </div>
+                <p class="betaling__OR">-OR-</p>
+                <img class="betaling__checkout" src="/assets/img/paypal-checkout.png" alt="">
+                <div class="betaling__bottomline"></div>
+            </section>
+
+            <section class="additional">
+                <h2 class="additional__overskrift">additional information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td class="info-table__info">manufacturer
+                        <td class="info-table__tekst info__brand"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-table__info">manufacturer link
+                        <td class="info-table__tekst info-table__tekst_aktiv info__link"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-table__info">free warranty
+                        <td class="info-table__tekst info-table__warranty"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-table__info">delivery charge
+                        <td class="info-table__tekst info-table__charge"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-table__info">delivery time
+                        <td class="info-table__tekst info-table__time"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-table__info">card surcharges
+                        <td class="info-table__tekst info-table__card"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                </table>
+            </section>
+        </article>
+
+
+        <p class="footer-kontakt"><i class="fas fa-phone-alt"> call us about this product</i></p>
+
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+    <script src="/assets/js/shopProdukt-js.js"></script>
+    <%- include ('../partials/after-footer.ejs') %>

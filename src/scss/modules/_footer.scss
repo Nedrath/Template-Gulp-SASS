@@ -1,0 +1,51 @@
+.footer-grid {
+    .location {
+        grid-area: location;
+
+        &__text {
+            font-size: 10px;
+            line-height: 1px;
+        }
+    }
+
+    .policy {
+        grid-area: policy;
+        align-self: center;
+        padding-bottom: 20px;
+
+        &__links {
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            
+        }
+    }
+
+    .payment {
+        grid-area: payment;
+        display: grid;
+        justify-self: self-end;
+    
+
+        &__img {
+            height: 38px;
+        }
+    }
+
+    .social {
+        grid-area: social;
+        place-self: center;
+
+        &__icon {
+            font-size: 11px;
+            color: white;
+            padding-top: 1px;
+        }
+        &__circle {
+            color: white;
+            font-size: 25px;
+            padding-top: 5px;
+        }
+    }
+}
