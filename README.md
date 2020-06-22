@@ -1,5 +1,6 @@
 # Template-Gulp-EJS-SASS
-This is a Template for my Gulp, EJS and SASS projects
+This is a Template for my Gulp, EJS and SASS projects.
+"USE THIS TEMPLATE" will make a new Gibhub Repository with these files.
 
 ### Initializing
 After cloning, initialize the repo with:
