@@ -1,27 +1,26 @@
+const gulp = require("gulp");
+const connect = require("gulp-connect");
+const imagemin = require("gulp-imagemin");
 
-const gulp = require('gulp');
-const connect = require('gulp-connect');
-const imagemin = require('gulp-imagemin')
-
-
-function image() {
-    return gulp.src('./src/img/**/*')
+function image(){
+    return gulp
+        .src("./src/img/*")
         .pipe(imagemin([
-            imagemin.mozjpeg({ quality: 75, progressive: true }),
+            imagemin.mozjpeg({quality: 75, progressive: true})
         ]))
-        .pipe(gulp.dest("tmp/assets/img"))
+        .pipe(gulp.dest("tmp/img"))
         .pipe(connect.reload());
 }
-
-function buildIMG() {
-    return gulp.src('./src/img/**/*')
+function buildIMAGE(){
+    return gulp
+        .src("./src/img/*")
         .pipe(imagemin([
-            imagemin.mozjpeg({ quality: 75, progressive: true }),
+            imagemin.mozjpeg({quality: 75, progressive: true})
         ]))
-        .pipe(gulp.dest("dist/assets/img"));
+        .pipe(gulp.dest("dist/img"));
 }
 
-function watchIMG() {
+function watchIMAGE(){
     return gulp
         .watch("./src/img/*", {
             ignoreInitial: false
@@ -29,6 +28,6 @@ function watchIMG() {
 }
 
 module.exports = {
-    watchIMG,
-    buildIMG
+    watchIMAGE,
+    buildIMAGE
 }

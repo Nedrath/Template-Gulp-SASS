@@ -1,20 +1,19 @@
+const gulp = require("gulp");
+const connect = require("gulp-connect");
 
-const gulp = require('gulp');
-const connect = require('gulp-connect');
-
-
-function media() {
-    return gulp.src('./src/media/*')
+function media(){
+    return gulp
+        .src("./src/media/*")
         .pipe(gulp.dest("tmp/assets/media"))
         .pipe(connect.reload());
 }
-
-function buildMEDIA() {
-    return gulp.src('./src/media/*')
+function buildMEDIA(){
+    return gulp
+        .src("./src/media/*")
         .pipe(gulp.dest("dist/assets/media"));
 }
 
-function watchMEDIA() {
+function watchMEDIA(){
     return gulp
         .watch("./src/media/*", {
             ignoreInitial: false

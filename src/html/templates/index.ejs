@@ -1,68 +1,10 @@
-<%- include ('../partials/before-header.ejs') %>
-<%- include ('../partials/header.ejs') %>
-<%- include ('../partials/navigation.ejs') %>
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header") %>
+<%- include ("../partials/navigation") %>
 
 <main>
-
-  <section class="hero">
-    <img class="hero__top-image" src='./assets/img/background_forside.jpg' alt='Hero image with logo'>
-    <img class="hero__logo" src="./assets/img/hi_fi_logo.png" alt="hifi-logo">
-    <img class="hero__bottom-image" src='./assets/img/message_background.jpg' alt='Image with info'>
-    <h1 class="hero__image-text">OUR EDINBURGH SHOWROOM HAS NOW MOVED<br>TO STUNNING NEW PREMISES ON JOPPA ROAD
-    </h1>
-  </section>
-
-  <section class="frontpage-slider">
-    <p class="frontpage-slider__text-name">PRIMULUNA SOUNDS</p>
-    <i class="pile fas fa-chevron-left frontpage-slider__back" id="back"></i>
-    <img class="frontpage-slider__big-img" src="./assets/img/slider/amplifier.jpg" alt="slider" height="665">
-    <i class="pile fas fa-chevron-right frontpage-slider__next" id="next"></i>
-  </section>
-
-  <section class="social-section">
-    <div class="cards">
-      <div class="cards__box1">
-        <a href="www.facebook.com"><i class="fab fa-facebook cards__icons"></i></a>
-      </div>
-      <div class="cards__box2">
-        <a href="www.blogger.com"><i class="fab fa-blogger cards__icons"></i></a>
-      </div>
-      <div class="cards__box3">
-        <a href="www.twitter.com"><i class="fab fa-twitter cards__icons cards__icons_modified "></i></a>
-      </div>
-    </div>
-
-    <article class="textsContainer">
-      <div class="textsContainer__blok">
-        <div class="items">
-          <h3 class="items__title">HISTORY</h3>
-          <p class="items__paragraph">
-            ESTABLISHED IN THE LATE 1960S, OUR FAMILY OWNED BUSINESS IS BASED
-            IN EDINBURGH AND FALKIRK, SERVICING CUSTOMERS ACROSS THE UK.
-          </p>
-        </div>
-
-        <div class="items">
-          <h3 class="items__title">NEWS</h3>
-          <p class="items__paragraph">
-            CHECK OUT OUR LATEST NEWS STORIES FOR ALL THE UP TO DATE HI-FI CORNER
-            PRODUCTS AND LAUNCHES
-          </p>
-        </div>
-
-        <div class="items">
-          <h3><a class="items__title items__title_link" href="/kategori-liste">SHOP</a></h3>
-          <p class="items__paragraph">
-            HAVE A LOOK IN OUR ONLINE SHOP FOR GREAT PRODUCTS AND DEALS.
-          </p>
-        </div>
-
-      </div>
-    </article>
-  </section>
-
+    
 </main>
 
-<%- include ('../partials/footer.ejs') %>
-<script src="/assets/js/slider.js"></script>
-<%- include ('../partials/after-footer.ejs') %>
+<%- include ("../partials/footer") %>
+<%- include ("../partials/after-footer") %>
