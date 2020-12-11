@@ -1,4 +1,4 @@
-# Gulp Template (EJS and SASS)
+# Gulp Template (EJS and SASS) (outdated)
 
 Template settings for a gulp project.
 
